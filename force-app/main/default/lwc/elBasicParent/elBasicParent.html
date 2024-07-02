@@ -1,0 +1,21 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent Component" >
+        <div class="slds-size_2-of-3 slds-var-p-bottom_small" >
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input value={name} name="name" label="Your Name" onchange={handleInputChange}>
+                    </lightning-input>
+                </div>
+                <div class="slds-col">
+                    <lightning-input value={title} name="title" label="Your Designation" onchange={handleInputChange}>
+                    </lightning-input>
+                </div>
+                <div class="slds-col">
+                    <lightning-input value={phone} name="phone" label="Your Phone" onchange={handleInputChange}>
+                    </lightning-input>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+    <c-el-basic-child contact={contact} ></c-el-basic-child>
+</template>
