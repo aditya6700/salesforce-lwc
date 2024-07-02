@@ -13,7 +13,7 @@ Create an app page and include the following components
 2. Nest a child component into a parent component and pass data to the parent component using HTML markup and eventlister. => Take an input from child component and display values in parent component.
 3. Loop through an array of items in a template, and nest an instance of a child component for each item in the array. => create a child component which displays user info card. Iterate child in parent using array of user info from parent.
 4. Create an experience component by assembling multiple child components. Type a few characters in the search bar to experience the recipe. => take input from parent and serach contacts from a defined set of contact data. If contacts found display them using child component created in Task 3
-5. Load a component dynamically by assigning a constructor at runtime. => on click of a button display Hello world component (Day 1 - Task 1)
+5. Load a component dynamically by assigning a constructor at runtime. => on click of a button display Hello world component (Day 1 - Task 1). Ref: [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html)
 
 ## Read All About It
 

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Dynamic Component">
+        <lightning-button variant="neutral" label="Load Component" title="loadComponent" onclick={loadComponent}></lightning-button>
+        <div class="slds-box dynamic-component">
+            <lwc:component lwc:is={dynamicInstance}>
+        </lwc:component>
+        </div>
+        <p slot="footer"> Load a component dynamically by assigning a constructor at runtime. </p>
+    </lightning-card>
+</template>
