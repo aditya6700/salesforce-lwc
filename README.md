@@ -15,9 +15,18 @@ Create an app page and include the following components
 4. Create an experience component by assembling multiple child components. Type a few characters in the search bar to experience the recipe. => take input from parent and serach contacts from a defined set of contact data. If contacts found display them using child component created in Task 3
 5. Load a component dynamically by assigning a constructor at runtime. => on click of a button display Hello world component (Day 1 - Task 1). Ref: [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html)
 
+
+
+
+
+## References
+- [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html)  
+- [Dynamic components in lightning web components (lwc)](https://www.decodeforce.com/blogs/lwc-dynamic-components)
+
 ## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Lightning Design System](https://www.lightningdesignsystem.com/)
+- [LWC Documentation](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html)
+- [Lightning Component Library](https://developer.salesforce.com/docs/component-library/overview/components)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
