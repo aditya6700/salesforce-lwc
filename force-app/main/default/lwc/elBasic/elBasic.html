@@ -1,0 +1,111 @@
+<template>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom1" variant="base">
+            <div slot="title"> Hello World</div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Bind an HTML element to a component property. (display a message using javascript
+                    variable)
+                </h2>
+                <p class="solution">My name is {myName}</p>
+            </div>
+        </lightning-card>
+    </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom2" variant="base">
+            <div slot="title"> Binding </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Change the value of a bound property when the value of an input field changes.
+                    (display a message say "Hello 'your name'". Here name must be dynamically changed from an input field)
+                </h2>
+                <lightning-input class="slds-size_2-of-3 slds-var-p-bottom_small" label="Type Something" value={inputText} onchange={inputTextHandler}></lightning-input>
+                <p>You have typed "{inputText}"</p>
+            </div>
+        </lightning-card>
+    </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom3" variant="base">
+            <div slot="title"> Expressions </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Use JavaScript expressions in a template. (take two input fields say first name and
+                    last name and display them in uppercased)
+                </h2>
+                <div class="slds-grid">
+                    <lightning-input class="slds-size_1-of-3 slds-var-p-bottom_small" label="First Name" name="firstName" value={nameObj.firstName} onchange={nameHandler}></lightning-input>
+                    <lightning-input class="slds-size_1-of-3 slds-var-p-bottom_small slds-var-m-left_medium" label="Last Name" name="lastName" value={nameObj.lastName} onchange={nameHandler}></lightning-input>
+                </div>
+                <p>Your full name in uppercased "{fullName}"</p>
+            </div>
+        </lightning-card>
+    </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom4" variant="base">
+            <div slot="title"> Conditional Rendering </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Conditionally render elements. (take a checkbox if true show something, if false
+                    hide it) - CONDITIONAL RENDERING
+                </h2>
+               
+                <lightning-input  type="checkbox" label="Check to play a game" class="slds-var-m-right_medium" onchange={handleCheckBox}></lightning-input>
+                <template lwc:if={isChecked}>
+                    <div class="slds-grid">
+                        <lightning-input class="slds-size_1-of-3 slds-var-m-right_medium" label="Enter a Number" value={inputNumber} onchange={handleNumberChange}></lightning-input>
+                        <template lwc:if={evenOrOdd}>
+                            <div class="slds-col slds-size_1-of-3 slds-var-m-top_x-small even" style="height:50px"></div>
+                        </template>
+                        <template lwc:else>
+                            <div class="slds-col slds-size_1-of-3 slds-var-m-top_x-small odd" style="height:50px"></div>
+                        </template>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <Strong>Rules:</Strong>If input number = even then box color = green. <br> If input number = odd then box color = red. 
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom5" variant="base">
+            <div slot="title"> For Each </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Loop through an array of items in a template. (use an array of objects. say name
+                    and title in each object.) - FOREACH
+                </h2>
+                <div class="solution">
+                    <p>Contact Details</p>
+                    <template if:true={contacts} for:each={contacts} for:item="con" for:index="index">
+                    <li key={con.Id}>
+                            {con.Name} -- {con.Title}
+                    </li>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card icon-name="custom:custom6" variant="base">
+            <div slot="title"> Iterator </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <h2 class="question">Loop through an array with special behavior for the first and last items. (same as
+                    task 5 use ITERATOR instead of FOREACH. add a line at the top and end of the elements i.e, first and last
+                    items) - ITERATOR
+                </h2>
+                <div class="solution">
+                    <template iterator:it={contacts}>
+                        <div key={it.value.Id}>
+                            <div if:true={it.first} class="first-item"></div>
+                            {it.value.Name} -- {it.value.Title}
+                            <div if:true={it.last} class="last-item"></div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

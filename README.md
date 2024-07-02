@@ -1,14 +1,14 @@
-# Salesforce DX Project: Next Steps
+# Salesforce Lightning Web Components
+## Day 1 - Introduction
+Create an app page and include the following components
+1. Bind an HTML element to a component property. (display a message using javascript variable) - **HELLO WORLD**
+2. Change the value of a bound property when the value of an input field changes. (display a message say `Hello <your name>`. Here name must be dynamically changed from an input field" - **BINDING**
+3. Use JavaScript expressions in a template. (take two input fields say first name and last name and display them in uppercased) - EXPRESSIONS
+4. Conditionally render elements. (take a checkbox if true show something, if false hide it) - **CONDITIONAL RENDERING**
+5. Loop through an array of items in a template. (use an array of objects. say name and title in each object.) - **FOREACH**
+6. Loop through an array with special behavior for the first and last items. (same as task 5 use **ITERATOR** instead of **FOREACH**. add a line at the top and end of the elements i.e, first and last items) -** ITERATOR**
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
 ## Read All About It
 
