@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent Component">
+        <div class="slds-size_2-of-3 slds-var-p-bottom_small" >
+            <p class="slds-var-p-horizontal_small"><strong>Name: </strong> {contact.name} </p>
+            <p class="slds-var-p-horizontal_small"><strong>Designation: </strong> {contact.title} </p>
+            <p class="slds-var-p-horizontal_small"><strong>Phone: </strong> {contact.phone} </p>
+        </div>
+    </lightning-card>
+    <c-el-basic-childcp onsenddata={recieveData}></c-el-basic-childcp>
+</template>
