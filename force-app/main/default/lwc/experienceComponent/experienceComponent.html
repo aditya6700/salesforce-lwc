@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Experience Component">
+         <div class="slds-size_3-of-3  slds-var-p-bottom_small">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input class="slds-size_1-of-3" label="Search Lord of the Rings Characters" name="name" value={name} onchange={handleInputChange}>
+                    </lightning-input>
+                </div>
+            </div>
+         </div>
+    </lightning-card>
+    
+    <template if:true={filteredContacts} for:each={filteredContacts} for:item="con" for:index="index">
+        <div class="slds-var-m-around_x-small shadow-3 slds-size_2-of-3" key={con.name}>
+            <c-el-basic-child contact={con}></c-el-basic-child>
+        </div>
+    </template>
+    
+    
+</template>
