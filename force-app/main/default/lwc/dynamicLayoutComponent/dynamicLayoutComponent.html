@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="narrow" title="Dynamic Component Layout Loading">
+        <div class="slds-clearfix slds-var-p-right_medium">
+            <div class="slds-float_right">
+                <lightning-button variant="brand" label={buttonName} title={buttonName} onclick={toggleLayout} ></lightning-button>
+            </div>
+        </div>
+        <div class="slds-box slds-var-m-around_large">
+            <div class="slds-var-p-around_medium">
+                <lwc:component lwc:is={dynamicLayoutInstance}></lwc:component>
+            </div>
+        </div>
+    </lightning-card>
+</template>

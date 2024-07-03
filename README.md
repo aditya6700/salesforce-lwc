@@ -15,7 +15,15 @@ Create an app page and include the following components
 4. Create an experience component by assembling multiple child components. Type a few characters in the search bar to experience the recipe. => take input from parent and serach contacts from a defined set of contact data. If contacts found display them using child component created in Task 3
 5. Load a component dynamically by assigning a constructor at runtime. => on click of a button display Hello world component (Day 1 - Task 1). Ref: [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html)
 
-
+## Day 3 - Dynamic Component
+Create a dynamic component that will show two different layouts, say Compact and full.
+1. Choose object and fields/layout of your choice. Make sure two layouts are different.
+2. Create two components for two layouts.  
+3. Add a button to the lightning page. on click of it the page should toggle between the two components. 
+ 
+Attached a sample GIF for reference.  
+![Example](./images/lwc-dynamic-components-salesforce.gif)  
+**Hint**: Complete Day 2 Task 5.
 
 
 
