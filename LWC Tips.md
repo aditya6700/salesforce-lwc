@@ -10,7 +10,8 @@
 2. Javascript file - Defines business logic and event handling like onclicking of button load data from salesforce, show something..etc.
 3. Metadata Config file - Design configuration properties, allowing LWC to be avilable in lightning app builder
 4. CSS file - additional styling for LWC component (optinal file)
-5. SVG file - Scalable Vector graphics image files (optional file)
+5. SVG file - Scalable Vector graphics image files (optional file)  
+
 ![LWC Component Bundle](./images/ComponentBundle.png)
 
 ## Tip 3 - Decorators

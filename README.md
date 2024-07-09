@@ -23,13 +23,19 @@ Create a dynamic component that will show two different layouts, say Compact and
  
 Attached a sample GIF for reference.  
 ![Example](./images/lwc-dynamic-components-salesforce.gif)  
-**Hint**: Complete Day 2 Task 5.
+**Hint**: Complete Day 2 Task 5.  
+**Ref**: [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html) 
+
+## Day 4 - Template Switching
+1. Create three HTML templates one for each Account, Contact and Lead.
+2. Display default page layouts using lightning record forms. Hardcode record Id's for each object for now. (in future tasks we make it dynamic)
+3. Add a dropdown in each template which has the options 'Account', 'Contact', 'Lead'.
+4. Add a button in each template with the dynamic label 'Switch to \<object from dropdown> Template'. eg: Switch to Lead Template, Switch to Account Template, Switch to Contact Template.
+5. On click of the button the template should change accordingly.
+
+**Ref**: [Render Multiple Templates](https://developer.salesforce.com/docs/platform/lwc/guide/create-render.html)
 
 
-
-## References
-- [Dynamically Instantiate Components](https://developer.salesforce.com/docs/platform/lwc/guide/js-dynamic-components.html)  
-- [Dynamic components in lightning web components (lwc)](https://www.decodeforce.com/blogs/lwc-dynamic-components)
 
 ## Read All About It
 
