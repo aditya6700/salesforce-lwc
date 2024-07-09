@@ -24,6 +24,10 @@
 > - Observe changes to the properties of an object or to the elements of an array.
 > - renders the component when changes occurs.  
 
-
 > **@wire**
 > - Reactive wire services utilized to read salesforce data from apex.
+
+## Tip 4 - @wire
+1. DML cannot be performed in wire.
+2. Multiple wires can be used in one component.
+3. Sequence of wire execution cannot be controlled.

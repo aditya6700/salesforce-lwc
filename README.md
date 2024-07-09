@@ -35,7 +35,12 @@ Attached a sample GIF for reference.
 
 **Ref**: [Render Multiple Templates](https://developer.salesforce.com/docs/platform/lwc/guide/create-render.html)
 
+## Day 5 - Search
+1) Create a search box display accounts based on search 
+2) Add filters based on Industry and Name and display only those records when searched.
+3) Make it dynamic should be reusable for all the objects.
 
+**Ref**: [Lightning Data Table](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/example)
 
 ## Read All About It
 

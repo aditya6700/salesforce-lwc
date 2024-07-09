@@ -1,0 +1,26 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Search Component" icon-name="standard:account">
+        <div class="slds-var-p-around_large slds-size_5-of-6 slds-grid slds-grid_vertical-align-end">
+            <lightning-input class="slds-col slds-size_1-of-4" label="Search by name" name="accountName" value={searchParameters.accountName} onchange={handleSearchFields}> </lightning-input>
+            <lightning-input class="slds-col slds-size_1-of-4 slds-var-p-left_medium" label="Search by industry" name="accountIndustry" value={searchParameters.accountIndustry} onchange={handleSearchFields}> </lightning-input>
+            <lightning-button class="slds-var-p-left_medium" variant="brand" label="Search" onclick={searchAccount} ></lightning-button>
+        </div>
+        <div class="slds-var-p-around_large">
+            <template lwc:if={accountData}>
+                <lightning-datatable
+                key-field="id"
+                data={accountData}
+                columns={columns}
+                hide-checkbox-column="true"
+                show-row-number-column
+              ></lightning-datatable>
+            </template>
+            <template lwc:elseif={error}>
+                <c-error-panel errors={error}></c-error-panel>
+            </template>
+            <template lwc:else>
+                <lightning-formatted-text value="No Account records found."></lightning-formatted-text>
+            </template>
+        </div>
+    </lightning-card>
+</template> 
